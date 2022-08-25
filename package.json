@@ -1,0 +1,22 @@
+{
+  "name": "seguin-scs",
+  "version": "1.0.0",
+  "description": "Seguin Student Computer Science Club",
+  "main": "js/index.js",
+  "scripts": {
+    "scss": "node-sass -watch scss -o css"
+  },
+  "author": "t-t-bui",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seguin-SCS/Seguin-SCS.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Seguin-SCS/Seguin-SCS.github.io/issues"
+  },
+  "homepage": "https://github.com/Seguin-SCS/Seguin-SCS.github.io#readme"
+}
