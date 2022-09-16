@@ -30,5 +30,3 @@ Version control lets developers safely work through __*branching*__ and __*mergi
 Once the develop gets his or her part of the code working properly, he or she can __*merge*__ that code back into the main source code to make it offical.
 
 
-
-
