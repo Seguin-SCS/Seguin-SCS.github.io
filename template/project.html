@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html class="h-100">
-    <head>
-        <meta charset="utf-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="sass/stylesheet.css">
-    </head>
+  <head>
+      <meta charset="utf-8">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="sass/stylesheet.css">
+  </head>
 
-    <!-- Main Body -->
-    <body>
-      <div class="conatiner">
-        <!-- Navigation -->
-        
+  <!-- Main Body -->
+  <body>
+    <div class="container">
+      <!-- Navigation -->
+      <header class="pb-3 mb-4 border-bottom">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0"><img src="/svg/circleLogo.png" alt="CS logo" style="width:60px; height:60px;"></h3></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav text-left">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Other Content
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="project.html">Project</a>
+                      <a class="dropdown-item" href="history.html">History</a>
+                      <a class="dropdown-item" href="calendar.html">Calendar</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+      </header>
+
+      <div class="row pb-3 m-4 ">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
       </div>
-    </body>
-    
-    <body class="text-center text-bg-dark">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="mb-auto">
-                <div class="">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                      <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0"><img src="/svg/circleLogo.png" alt="CS logo" style="width:60px; height:60px;"></h3></a>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav text-left">
-                          <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Other Content
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                              <a class="dropdown-item" href="project.html">Project</a>
-                              <a class="dropdown-item" href="history.html">History</a>
-                              <a class="dropdown-item" href="calendar.html">Calendar</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </nav>
-                  </div>
-            </header>
-            <main class="px-3">
-                <div>
-                    <h1>Projects</h1>
-                </div>
-            </main>
-        </div>
 
-      <footer class="mt-auto p-5 bg-secondary" style="">
-        <h3>JSHS Computer Science Club</h3>
+      <!-- Footer -->
+      <footer class="mt-auto p-5 bg-secondary w-100" style="">
+        <h3 class="text-center">JSHS Computer Science Club</h3>
         <div class="d-flex justify-content-center">
-            <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="../svg/githubicon.webp" style="height:100%" /></div></a>
-            <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="../svg/emailicon.webp" style="height:100%" /></div></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="../svg/html5.png" style="height:100%" /></div></a>
-            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="../svg/bootstrap5icon.svg" style="height:100%" /></div></a>
+            <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/githubicon.webp" style="height:100%" alt="GitHub icon"/></div></a>
+            <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/emailicon.webp" style="height:100%" /></div></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/html5.png" style="height:100%" /></div></a>
+            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/bootstrap5icon.svg" style="height:100%" /></div></a>
         </div>
-    </footer>
+        <p class="text-center">Hosted with GitHub Pages.</p>
+      </footer>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 </html>
