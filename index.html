@@ -9,116 +9,158 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="sass/stylesheet.css">
     </head>
-    <body class="text-center text-bg-dark">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-            <header class="">
-                <div class="">
-                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0">Club</h3></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+    <body>
+      <main>
+        <div class="container py-4">
+          <!-- Navigation -->
+          <header class="pb-3 mb-4 border-bottom">
+            <div class="">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0">CS</h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav text-left">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="template/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="template/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Other Content
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="template/project.html">Project</a>
+                        <a class="dropdown-item" href="template/history.html">History</a>
+                        <a class="dropdown-item" href="template/calendar.html">Calendar</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+
+          <!-- Jumbotron -->
+          <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">CS Club</h1>
+              <p class="col-md-8 fs-4 text-justify">Welcome to the Juan Seguin Computer Science Club. This is a student run organization that aims to promote all things related to the field of Computer Science.</p>
+              <button class="btn btn-primary btn-lg" type="button">About Us</button>
+            </div>
+          </div>
+
+          <!-- Body / Tempt Name -->
+          <div class=" ">
+            <!-- Logo -->
+            <div style="position:relative; height:275px;">
+              <img src="/svg/circleLogo.png" alt="SCSC logo" style="position:relative; top:-25px; 
+                          width:300px; height:300px; border:none;">
+            </div>
+          
+            <!-- Accordian -->
+            <div class="row d-flex p-2 m-2">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      Welcome to the Computer Science Club
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                      <ul class="navbar-nav text-left">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      The offical website of the new <strong>Juan Seguin High School Computer Science Club</strong>. Here to build and apply knowledge of coding and computer science.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      Upcoming/Current Projects and Events
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <!-- Unordered List -->
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="checked" aria-label="..." checked aria-checked="true">
+                          Create and build the club website
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="template/about.html">About</a>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                          UIL Computer Science
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="template/contact.html">Contact</a>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                          Third checkbox
                         </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Other Content
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="template/project.html">Project</a>
-                            <a class="dropdown-item" href="template/history.html">History</a>
-                            <a class="dropdown-item" href="template/calendar.html">Calendar</a>
-                          </div>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                          Fourth checkbox
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                          Fifth checkbox
                         </li>
                       </ul>
                     </div>
-                  </nav>
+                  </div>
                 </div>
-            </header>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          
-            <div class="">
-              <div style="background-color: gray; position:relative; height: 40%; width: 100%; border: 5px solid black; ">
-                <h1>Seguin Computer Science Club</h1>      
-                <p>This is the Seguin High School Club</p>
+            <!--  -->
+            <div class="row d-flex p-2 m-2">
+              <div class="fl-module-content fl-node-content">
+                <div class="fl-rich-text">
+                  <h3 style="text-align: left;">Want to join? </h3>
+                  <p style="text-align: left;">
+                    <span style="font-size: 15px;">Our meetings are Tuesdays & Thursdays 3-4 in room A113. Talk to Mr. Bui
+                      or one of our club officers for questions. </span>
+                  </p>
+                </div>
               </div>
 
-              
-            <main class="px-3">
-                <div class=" ">
-                    <div style="position:relative; height:275px;">
-                      <img src="/svg/circleLogo.png" alt="SCSC logo" 
-                        style="position:relative; top:-25px; 
-                        width:300px; height:300px; border:none;">
-                    </div>
-                   <div class="fl-module-content fl-node-content">
-                    <div class="fl-rich-text">
-                      <h3 style="text-align: left;">Welcome to the Computer Science Club </h3>
-                      <p style="text-align: left;">
-                        <span style="font-size: 15px;">&nbsp;//The offical website of the new Juan Seguin High School Computer Science Club. Here to build and apply knowledge of coding and computer science. </span>
-                      </p>
-                    </div> 
-                  </div>
-                  <div class="fl-module-content fl-node-content">
-                    <div class="fl-rich-text">
-                      <h3 style="text-align: left;">Upcoming/Current Projects and Events </h3>
-                      <p style="text-align: left;">
-                        <span style="font-size: 15px;">&nbsp;//Create and build the club website</span>
-                      </p>
-                      <p style="text-align: left;">
-                        <span style="font-size: 15px;">&nbsp;//UIL Computer Science</span>
-                      </p>
-                      <p style="text-align: left;">
-                        <span style="font-size: 15px;">&nbsp;//UTA Hackathon</span>
-                      </p>
-                    </div> 
-                  </div>
-                  <div class="fl-module-content fl-node-content">
-                    <div class="fl-rich-text">
-                      <h3 style="text-align: left;">Want to join? </h3>
-                      <p style="text-align: left;">
-                        <span style="font-size: 15px;">&nbsp;//Our meetings are Tuesdays & Thursdays 3-4 in room A113. Talk to Mr. Bui or one of our club officers for questions. </span>
-                      </p>
-                    </div> 
-                  </div>
-                  <h4 style="text-align: left;">Link to Signup: <a rel="noopener" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeXKNSYmqFnIUPybbobw2CsUFe4fwNs8NYdZqPAD3tUMdIKOA/viewform">{Seguin Computer Science Club Signup Form}</a>
-                  </h4>
-                    <p>Hosted with GitHub Pages.</p>
-                </div>
-                <div>
-                    <div class="toggle-button-cover">
-                        <div class="button-cover">
-                          <div class="button r" id="button-1">
-                            <input type="checkbox" class="checkbox" />
-                            <div class="knobs"></div>
-                            <div class="layer"></div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-      </div>
-
+              <h4 style="text-align: left;">Link to Signup: <a rel="noopener" target="_blank"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeXKNSYmqFnIUPybbobw2CsUFe4fwNs8NYdZqPAD3tUMdIKOA/viewform">Seguin
+                Computer Science Club Signup Form</a>
+            </h4>
+            </div>
+          </div>
+          
+          <!-- Footer -->
           <footer class="mt-auto p-5 bg-secondary w-100" style="">
-        <h3>JSHS Computer Science Club</h3>
-        <div class="d-flex justify-content-center">
-            <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/githubicon.webp" style="height:100%" /></div></a>
-            <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/emailicon.webp" style="height:100%" /></div></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/html5.png" style="height:100%" /></div></a>
-            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/bootstrap5icon.svg" style="height:100%" /></div></a>
+            <h3 class="text-center">JSHS Computer Science Club</h3>
+            <div class="d-flex justify-content-center">
+                <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/githubicon.webp" style="height:100%" alt="GitHub icon"/></div></a>
+                <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/emailicon.webp" style="height:100%" /></div></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/html5.png" style="height:100%" /></div></a>
+                <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/bootstrap5icon.svg" style="height:100%" /></div></a>
+            </div>
+            <p class="text-center">Hosted with GitHub Pages.</p>
+          </footer>
         </div>
-    </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      </main>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
