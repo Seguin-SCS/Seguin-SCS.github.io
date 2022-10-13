@@ -9,82 +9,92 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="sass/stylesheet.css">
+        <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
-<body class="text-center text-bg-dark" style="background-color:#88c8f2;">
-  <link href="style.css" rel="stylesheet" type="text/css" />
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header class="mb-auto">
-          <div class="">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-              <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0">Club</h3></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav text-left">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Other Content
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="project.html">Project</a>
-                      <a class="dropdown-item" href="history.html">History</a>
-                      <a class="dropdown-item" href="calendar.html">Calendar</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+<!-- main body -->
+<body>
+  <div class="container py-4">
+    <!-- Navigation -->
+    <header class="pb-3 mb-4 border-bottom">
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"><h3 class="float-md-start mb=0"><img src="/svg/circleLogo.png" alt="CS logo" style="width:60px; height:60px;"></h3></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text-left">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Other Content
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="project.html">Project</a>
+                  <a class="dropdown-item" href="history.html">History</a>
+                  <a class="dropdown-item" href="calendar.html">Calendar</a>
+                </div>
+              </li>
+            </ul>
           </div>
-        </header>
-      
-        <main class="px-3">
-           <div name= "aboutCarousel" class="carousel">
-            <div class="carousel__item">
-            <h4 class="card-title">Card 1</h4>
-              <img src="https://thumbs.dreamstime.com/z/pretty-spring-blossom-nature-background-white-blooming-tree-blue-sky-sunshine-banner-141457932.jpg" class="card-img-top" />
-            </div>
-            <div class="carousel__item carousel__item--selected">
-              <h4 class="card-title">Card 2</h4>
-              <img src="https://thumbs.dreamstime.com/z/flowering-almond-tree-flower-13102902.jpg" class="card-img-top" />
-            </div>
-            <div class="carousel__item">
-            <h4 class="card-title">Card 3</h4>
-              <img src="https://thumbs.dreamstime.com/z/cherry-flowers-background-24165737.jpg" class="card-img-top" />
-            </div
-            <div class="carousel__nav">
-              <span class="carousel__button"></span>
-              <span class="carousel__button carousel__button--selected"></span>
-              <span class="carousel__button"></span>
-            </div>
-          </div>
-          <script src="script.js"></script>
-        </main>
+        </nav>
+      </div>
+    </header>
 
-    </div>
-    <footer class="mt-auto p-5 bg-secondary" style="">
-        <h3>JSHS Computer Science Club</h3>
-        <div class="d-flex justify-content-center">
-            <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="../svg/githubicon.webp" style="height:100%" /></div></a>
-            <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="../svg/emailicon.webp" style="height:100%" /></div></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="../svg/html5.png" style="height:100%" /></div></a>
-            <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="../svg/bootstrap5icon.svg" style="height:100%" /></div></a>
+    <!-- Carousel -->
+    <div class="row pb-3 mb-4">
+      <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#aboutCarousel" data-slide-to="1"></li>
+          <li data-target="#aboutCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://thumbs.dreamstime.com/z/pretty-spring-blossom-nature-background-white-blooming-tree-blue-sky-sunshine-banner-141457932.jpg" class="card-img-top" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/z/flowering-almond-tree-flower-13102902.jpg" class="card-img-top" />
+          </div>
+          <div class="carousel-item">
+            <img src="https://thumbs.dreamstime.com/z/cherry-flowers-background-24165737.jpg" class="card-img-top" />
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#aboutCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#aboutCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto p-5 bg-secondary w-100" style="">
+      <h3 class="text-center">JSHS Computer Science Club</h3>
+      <div class="d-flex justify-content-center">
+          <a href="https://github.com/Seguin-SCS/Seguin-SCS.github.io" title="Our GitHub Repository"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/githubicon.webp" style="height:100%" alt="GitHub icon"/></div></a>
+          <a href="https://gmail.com/" title="Email Us!"><div name="icon" class="ms-3" style="height:50px; border-radius:100%;"><img src="/svg/emailicon.webp" style="height:100%" /></div></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" title="HTML5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/html5.png" style="height:100%" /></div></a>
+          <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" title="Bootstrap 5 Documentation"><div class="ms-3" name="icon" style="height:50px; border-radius:100%;"><img src="/svg/bootstrap5icon.svg" style="height:100%" /></div></a>
+      </div>
+      <p class="text-center">Hosted with GitHub Pages.</p>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
+  </div>
 </body>
-
 </html>
