@@ -1,5 +1,9 @@
 /*# sourceMappingURL=stylesheet.css.map */
 
+img {
+    width: 100%;
+}
+
 .main-jumbo {
     background-image: url("../image/IMG-0980.jpg");
     background-size: contain;
@@ -11,6 +15,3 @@
     justify-content: center;
 }
 
-img {
-    width: 100%
-}
